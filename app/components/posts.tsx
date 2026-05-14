@@ -246,7 +246,7 @@ function PostCard({ post }: { post: EventCardProps }) {
       </div>
 
       {/* Posted time */}
-      <div className="text-xs text-gray-500 px-2 py-1">{post.postedTime}</div>
+      <div className="posted-time text-xs text-gray-500 px-2 py-1">{post.postedTime}</div>
     </div>
   );
 }
@@ -261,3 +261,4 @@ export default function Posts() {
     </div>
   );
 }
+
