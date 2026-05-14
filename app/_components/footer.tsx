@@ -17,7 +17,7 @@ export default function FooterInsta() {
 
   return (
     <>
-      <div className="container flex bg-black  border-white h-12 fixed bottom-0">
+      <div className="container flex bg-black  border-white h-12 fixed bottom-0 ">
         <ul className="flex flex-row justify-between items-center w-full p-6">
           <li onClick={() => router.push("./")}>
             <HousePlus />
