@@ -31,10 +31,10 @@ export default function FooterInsta() {
           <li>
             <Plus />
           </li>
-          <li onClick={() => router.push("./components/messages")}>
+          <li onClick={() => router.push("/messages")}>
             <Send />
           </li>
-          <li onClick={() => router.push("./components/profile")}>
+          <li onClick={() => router.push("/profile")}>
             <CircleUser />
           </li>
         </ul>

@@ -10,7 +10,7 @@ export default function Messages() {
       <div className="container min-h-screen flex flex-col">
         <div className="navbar flex flex-row items-center w-full justify-between sticky top-0 h-15 px-4 bg-black border-b border-zinc-800 z-1">
           <div className="back-button">
-            <ArrowLeft onClick={() => router.push("./")} />
+            <ArrowLeft onClick={() => router.push("/")} />
           </div>
           <div className="font-semibold text-1xl">vin_seenu_03</div>
           <div className="notes">

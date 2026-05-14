@@ -1,11 +1,11 @@
 "use client";
 
 import { use } from "react";
-import NavbarInsta from "./components/navbar";
-import Posts from "./components/posts";
-import StoryBar from "./components/story";
+import NavbarInsta from "./_components/navbar";
+import Posts from "./_components/posts";
+import StoryBar from "./_components/story";
 
-export default function HomePage() {
+export default function Home() {
   return (
     <>
       <div className="min-h-screen flex flex-col">
