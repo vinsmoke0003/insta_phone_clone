@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useRef } from "react";
 
 type StoryProps = {
   id: number;
@@ -23,7 +22,7 @@ const stories: StoryProps[] = [
 
 function StoryCard({ story }: { story: StoryProps }) {
   return (
-    <div className="flex flex-col items-center gap-1 cursor-pointer shrink-0 justify-around">
+    <div className="flex flex-col items-center gap-1 cursor-pointer shrink-0">
       <div className={"p-0.5 rounded-full bg-linear-to-tr from-yellow-400 via-pink-500 to-purple-600"}>
         <div className="bg-black rounded-full p-0.5">
           <Image

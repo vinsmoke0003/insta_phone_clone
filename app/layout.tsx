@@ -14,10 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-full flex flex-col">
-        {children}
-        <FooterInsta />
-      </body>
+<body className="min-h-full flex flex-col bg-zinc-950">
+  <div className="w-full max-w-md mx-auto bg-black min-h-screen">
+    {children}
+    <FooterInsta />
+  </div>
+</body>
     </html>
   );
 }

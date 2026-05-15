@@ -5,7 +5,7 @@ import { Heart, Search } from "lucide-react";
 export default function NavbarInsta() {
   return (
     <>
-      <div className="w-full sticky top-0 h-14 flex flex-start items-center gap-3 pl-4 px-2 bg-black" >
+      <div className="w-full sticky top-0 h-14 flex flex-start items-center gap-3 pl-4 px-2 bg-black " >
         <div>
             Instagram
         </div>

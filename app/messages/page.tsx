@@ -194,7 +194,7 @@ export default function Messages() {
           <div className="absolute -bottom-2 left-3 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-8 border-t-zinc-800" />
         </div>
         
-        <span className="text-xs text-gray-400 mt-1">
+        <div className="text-xs text-gray-400 mt-1">
           <Image
             src="/story_images/image10.jpeg"
             alt="Profile"
@@ -202,7 +202,7 @@ export default function Messages() {
             height={55}
             className="rounded-full object-cover w-14 h-14"
           />
-        </span>
+        </div>
       </div>
 
       {/* Messages list */}

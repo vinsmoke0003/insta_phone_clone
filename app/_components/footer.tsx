@@ -2,7 +2,6 @@
 
 import {
   HousePlus,
-  Search,
   Plus,
   Compass,
   SquarePlay,
@@ -10,14 +9,13 @@ import {
   CircleUser,
 } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { use } from "react";
 
 export default function FooterInsta() {
   const router = useRouter();
 
   return (
     <>
-      <div className="container flex bg-black  border-white h-12 fixed bottom-0 ">
+      <div className="container flex bg-black h-12 fixed bottom-0 ">
         <ul className="flex flex-row justify-between items-center w-full p-6">
           <li onClick={() => router.push("./")}>
             <HousePlus />

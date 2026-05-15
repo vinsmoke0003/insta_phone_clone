@@ -101,13 +101,13 @@ export default function Profile() {
 
       {/* Tabs */}
       <div className="flex justify-around mt-5 border-b border-zinc-800 px-5">
-        <div className="pb-2 border-b-2 border-white ">
+        <div className="pb-2 border-b-2 ">
           <TableCellsSplit size={27}/>
         </div>
-        <div className="pb-2 border-b-2 border-white ">
+        <div className="pb-2 border-b-2 ">
           <Bookmark size={27}/>
         </div>
-        <div className="pb-2 border-b-2 border-white">
+        <div className="pb-2 border-b-2">
           <ContactRound size={27} />
         </div>
       </div>
