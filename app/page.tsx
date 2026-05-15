@@ -5,14 +5,16 @@ import StoryBar from "./_components/story";
 
 export default function Home() {
   return (
-    <>
-      <div className="min-h-screen flex flex-col">
-        <NavbarInsta /> 
-            <StoryBar />
-        <div className="f">
+    <main className=" flex-col md:items-center md:justify-center p-4 md:p-8 min-h-screen flex  ">
+      <div className="">
+        <NavbarInsta />
+        <div className="">
+          <StoryBar />
+        </div>
+        <div className="">
           <Posts />
         </div>
       </div>
-    </>
+    </main>
   );
 }

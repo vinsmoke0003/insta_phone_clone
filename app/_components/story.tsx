@@ -22,7 +22,7 @@ const stories: StoryProps[] = [
 
 function StoryCard({ story }: { story: StoryProps }) {
   return (
-    <div className="flex flex-col items-center gap-1 cursor-pointer shrink-0">
+    <div className="flex flex-col items-center gap-1 cursor-pointer shrink-0 ">
       <div className={"p-0.5 rounded-full bg-linear-to-tr from-yellow-400 via-pink-500 to-purple-600"}>
         <div className="bg-black rounded-full p-0.5">
           <Image
@@ -45,7 +45,7 @@ function StoryCard({ story }: { story: StoryProps }) {
 export default function StoryBar() {
 
   return (
-    <div className="w-full bg-black border-b border-zinc-800  py-3 pl-2">
+    <div className="w-full md:w-lg py-3">
       <div className="flex flex-row gap-5 overflow-x-auto scroll-smooth">
         <style>{`div::-webkit-scrollbar { display: none; }`}</style>
 

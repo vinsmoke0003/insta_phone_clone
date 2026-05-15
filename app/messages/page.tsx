@@ -159,19 +159,19 @@ export default function Messages() {
   const router = useRouter();
 
   return (
-    <div className="container min-h-screen flex flex-col">
+    <div className="container min-h-screen flex flex-col md:pl-20">
       {/* Navbar */}
-      <div className="flex flex-row items-center w-full justify-between sticky top-0 h-15 px-4 bg-black border-b border-zinc-800 z-50">
+      <div className="flex flex-row items-center w-full justify-between sticky top-0 h-15 px-4 bg-black border-b border-zinc-800 z-50 md:px-8 md:max-w-xl md:mx-auto">
         <ArrowLeft
           onClick={() => router.push("/")}
-          className="cursor-pointer"
+          className="cursor-pointer md:hidden"
         />
         <div className="font-semibold">vin_seenu_03</div>
         <NotebookPen />
       </div>
 
       {/* Search */}
-      <div className="relative w-full px-4 py-2">
+      <div className="relative w-full px-4 py-2 md:px-8 md:max-w-xl md:mx-auto">
         <Search
           size={16}
           className="absolute left-8 top-1/2 -translate-y-1/2 text-gray-500"
@@ -184,7 +184,7 @@ export default function Messages() {
       </div>
 
       {/* Note bubble */}
-      <div className="flex flex-col items-start mx-5 mt-2">
+      <div className="flex flex-col items-start mx-5 mt-2 md:mx-auto md:w-full md:max-w-xl md:px-8">
         <div className="relative bg-zinc-800 text-gray-300 text-xs px-3 py-2 rounded-2xl rounded-bl-none mb-2 w-32">
           <input
             type="text"
@@ -206,7 +206,7 @@ export default function Messages() {
       </div>
 
       {/* Messages list */}
-      <div className="flex-1 overflow-y-auto px-4 mt-4">
+      <div className="flex-1 overflow-y-auto px-4 mt-4 md:px-8 md:w-full md:max-w-xl md:mx-auto">
         <div className="flex flex-row justify-between items-center mb-2">
           <span className="font-bold text-white">Messages</span>
           <span className="text-sm text-gray-400">Requests (1)</span>

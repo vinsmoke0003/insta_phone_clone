@@ -40,9 +40,9 @@ export default function Profile() {
   ];
 
   return (
-    <div className="min-h-screen text-white bg-black">
+    <div className="min-h-screen text-white bg-black md:pl-20">
       {/* Navbar */}
-      <div className="flex justify-between items-center p-4">
+      <div className="flex justify-between items-center p-4 md:max-w-4xl md:mx-auto md:px-0 md:pt-8">
         <div className="">
           <Settings />
         </div>
@@ -54,9 +54,9 @@ export default function Profile() {
       </div>
 
       {/* Avatar + Stats */}
-      <div className="flex items-center gap-6 mt-2 px-4 py-3 w-fit">
+      <div className="flex items-center gap-6 mt-2 px-4 py-3 w-fit md:max-w-4xl md:mx-auto md:w-full md:gap-20 md:px-0 md:py-8">
         {/* Avatar */}
-        <div className="relative w-20 h-20 bg-gray-700 rounded-full flex items-center justify-center shrink-0">
+        <div className="relative w-20 h-20 bg-gray-700 rounded-full flex items-center justify-center shrink-0 md:w-36 md:h-36">
           <Camera size={28} className="text-gray-400" />
           <div className="absolute bottom-0 right-0 bg-blue-500 rounded-full p-1">
             <Camera size={10} className="text-white" />
@@ -64,9 +64,9 @@ export default function Profile() {
         </div>
 
         {/* Name + Stats */}
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 md:gap-4">
           <p className="font-semibold text-sm">meowkitty6291</p>
-          <div className="flex gap-6">
+          <div className="flex gap-6 md:gap-12">
             <div className="flex flex-col items-center">
               <span className="font-bold text-sm">0</span>
               <span className="text-xs text-gray-400">posts</span>
@@ -84,13 +84,13 @@ export default function Profile() {
       </div>
 
       {/* Bio */}
-      <div className="mt-3 pl-6">
+      <div className="mt-3 pl-6 md:max-w-4xl md:mx-auto md:pl-56 md:-mt-12">
         <p className="font-semibold text-lg">meowkitty6291</p>
         <p className="text-sm">I am Moti Billi</p>
       </div>
 
       {/* Buttons */}
-      <div className="flex gap-2 mx-4 mt-4">
+      <div className="flex gap-2 mx-4 mt-4 md:max-w-4xl md:mx-auto md:pl-56 md:w-full">
         <button className="flex-1 bg-zinc-800 p-2 rounded-full text-sm font-semibold">
           Edit profile
         </button>
@@ -100,7 +100,7 @@ export default function Profile() {
       </div>
 
       {/* Tabs */}
-      <div className="flex justify-around mt-5 border-b border-zinc-800 px-5">
+      <div className="flex justify-around mt-5 border-b border-zinc-800 px-5 md:max-w-4xl md:mx-auto md:mt-12">
         <div className="pb-2 border-b-2 ">
           <TableCellsSplit size={27}/>
         </div>
@@ -113,7 +113,7 @@ export default function Profile() {
       </div>
 
       {/* Posts Grid */}
-      <div className="grid grid-cols-3 gap-0.5 mt-3">
+      <div className="grid grid-cols-3 gap-0.5 mt-3 md:max-w-4xl md:mx-auto md:gap-1">
         {posts.map((img, index) => (
           <div
             key={index}
