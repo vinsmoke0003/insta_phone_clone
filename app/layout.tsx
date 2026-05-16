@@ -23,7 +23,7 @@ export default function RootLayout({
 
           {/* Main Content */}
           <main className="flex justify-center w-full bg-black min-h-screen md:ml-20">
-            <div className="w-full max-w-md pb-20">{children}</div>
+            <div className="w-full max-w-lg pb-20">{children}</div>
           </main>
 
           {/* Mobile Footer */}

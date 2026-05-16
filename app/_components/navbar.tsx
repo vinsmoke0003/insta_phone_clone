@@ -1,25 +1,37 @@
 "use client";
 
 import { Heart, Search } from "lucide-react";
+import { Molle } from "next/font/google";
+
+const playwrite = Molle({
+  weight: "400",
+});
 
 export default function NavbarInsta() {
   return (
-    <>
-      <div className="w-full sticky top-0 h-14 flex items-center gap-3 pl-4 px-2" >
-        <div>
-            Instagram
-        </div>
-        <div className="searchbar bg-gray-600 placeholder:text-gray-500 border border-black w-10/12 rounded-2xl pl-2 py-2 text-gray-300 flex items-center gap-1 text-shadow-md text-medium">
+    <div className="sticky top-0 z-50 flex h-14 w-full items-center gap-3 bg-black px-4">
 
-          <span className="text-xs">
-            <Search />
-          </span>
-        <div className="placeholder:text-gray-500 text-gray-300" >
-          Search Bar
-        </div>
-        </div>
-        <div className="heart"><Heart /></div>
+      {/* Instagram Text */}
+      <div
+        className={`${playwrite.className} text-xl tracking-tight text-white shrink-0`}
+      >
+        Instagram
       </div>
-    </>
+
+      {/* Search Bar */}
+      <div className="flex flex-1 items-center gap-2 rounded-2xl bg-zinc-800 px-3 py-2 text-gray-400">
+
+        <Search size={18} />
+
+        <span className="text-sm">
+          Search
+        </span>
+      </div>
+
+      {/* Heart Icon */}
+      <div className="shrink-0 text-white">
+        <Heart size={24} />
+      </div>
+    </div>
   );
 }

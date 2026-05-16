@@ -143,10 +143,10 @@ function MessageCard({ message }: { message: MessageProps }) {
 
       {/* Text */}
       <div className="flex flex-col">
-        <span className="text-sm font-semibold text-white">
+        <span className="text-sm md:text-base font-semibold text-white">
           {message.username}
         </span>
-        <span className="text-xs text-gray-400">
+        <span className="text-sm md:text-[15px] text-gray-400">
           {message.lastMessage} · {message.time}
         </span>
       </div>
@@ -159,9 +159,9 @@ export default function Messages() {
   const router = useRouter();
 
   return (
-    <div className="container min-h-screen flex flex-col md:pl-20">
+    <div className=" min-h-screen flex flex-col">
       {/* Navbar */}
-      <div className="flex flex-row items-center w-full justify-between sticky top-0 h-15 px-4 bg-black border-b border-zinc-800 z-50 md:px-8 md:max-w-xl md:mx-auto">
+      <div className="flex flex-row items-center w-full justify-between sticky top-0 h-15 px-4 bg-black border-b border-zinc-800 z-50 md:px-8 ">
         <ArrowLeft
           onClick={() => router.push("/")}
           className="cursor-pointer md:hidden"
@@ -171,42 +171,42 @@ export default function Messages() {
       </div>
 
       {/* Search */}
-      <div className="relative w-full px-4 py-2 md:px-8 md:max-w-xl md:mx-auto">
+      <div className="relative w-full px-4 py-2 md:px-8 ">
         <Search
           size={16}
-          className="absolute left-8 top-1/2 -translate-y-1/2 text-gray-500"
+          className="absolute left-8 top-1/2 -translate-y-1/2 text-gray-500 md:left-12"
         />
         <input
           type="text"
           placeholder="Search"
-          className="w-full bg-zinc-800 placeholder:text-gray-500 border border-zinc-700 rounded-2xl pl-9 pr-4 py-2 text-gray-300 text-sm outline-none focus:border-zinc-500"
+          className="w-full bg-zinc-800 placeholder:text-gray-500 border border-zinc-700 rounded-2xl pl-9 pr-4 py-2 text-gray-300 text-base outline-none focus:border-zinc-500"
         />
       </div>
 
       {/* Note bubble */}
-      <div className="flex flex-col items-start mx-5 mt-2 md:mx-auto md:w-full md:max-w-xl md:px-8">
-        <div className="relative bg-zinc-800 text-gray-300 text-xs px-3 py-2 rounded-2xl rounded-bl-none mb-2 w-32">
+      <div className="flex flex-col items-start mx-5 mt-2 md:px-8">
+        <div className="relative bg-zinc-800 text-gray-300 text-sm px-3 py-2 rounded-2xl rounded-bl-none mb-2 w-32">
           <input
             type="text"
             placeholder="Share your thoughts..."
-            className="bg-transparent outline-none placeholder:text-gray-400 text-xs w-full"
+            className="bg-transparent outline-none placeholder:text-gray-400 text-sm w-full"
           />
           <div className="absolute -bottom-2 left-3 w-0 h-0 border-l-[6px] border-l-transparent border-r-[6px] border-r-transparent border-t-8 border-t-zinc-800" />
         </div>
         
-        <div className="text-xs text-gray-400 mt-1">
+        <div className="text-sm text-gray-400 mt-1">
           <Image
             src="/story_images/image10.jpeg"
             alt="Profile"
             width={55}
             height={55}
-            className="rounded-full object-cover w-14 h-14"
+            className="rounded-full object-cover w-16 h-16 md:w-20 md:h-20"
           />
         </div>
       </div>
 
       {/* Messages list */}
-      <div className="flex-1 overflow-y-auto px-4 mt-4 md:px-8 md:w-full md:max-w-xl md:mx-auto">
+      <div className="flex-1 overflow-y-auto px-4 mt-4 md:px-8">
         <div className="flex flex-row justify-between items-center mb-2">
           <span className="font-bold text-white">Messages</span>
           <span className="text-sm text-gray-400">Requests (1)</span>

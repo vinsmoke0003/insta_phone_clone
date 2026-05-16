@@ -3,6 +3,7 @@ import { Bookmark, Ellipsis, Heart, MessageCircle, Repeat2, Send } from "lucide-
 import Image from "next/image";
 import { useState } from "react";
 
+
 type EventCardProps = {
   username: string;
   profileImage: string;
