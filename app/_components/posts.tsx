@@ -167,7 +167,7 @@ function PostCard({ post }: { post: EventCardProps }) {
   const [expanded, setExpanded] = useState(false);
 
   return (
-    <div className="">
+    <div>
       {/* Profile */}
       <div className="profile flex flex-row justify-between items-center p-4">
         <div className="flex flex-row items-center gap-2">

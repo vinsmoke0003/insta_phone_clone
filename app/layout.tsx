@@ -14,10 +14,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-full flex flex-col bg-zinc-950">
-        <div className="w-full max-w-md mx-auto bg-black min-h-screen md:max-w-none md:mx-0">
-          {children}
-          <FooterInsta />
+      <body className="min-h-screen bg-zinc-950">
+        <div className="flex">
+          {/* Desktop Sidebar */}
+          <div className="hidden md:flex">
+            <FooterInsta />
+          </div>
+
+          {/* Main Content */}
+          <main className="flex justify-center w-full bg-black min-h-screen md:ml-20">
+            <div className="w-full max-w-md pb-20">{children}</div>
+          </main>
+
+          {/* Mobile Footer */}
+          <div className="md:hidden">
+            <FooterInsta />
+          </div>
         </div>
       </body>
     </html>
